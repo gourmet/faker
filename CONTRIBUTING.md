@@ -75,10 +75,10 @@ standard. The README contains installation info for the sniff and phpcs.
 [github:docs]:https://help.github.com
 [github:pr]:https://help.github.com/send-pull-requests
 [phpunit]:http://phpunit.de
-[repo:issue]:https://github.com/gourmet/liquid/issues/new
-[repo:bugs]:https://github.com/gourmet/liquid/issues?label=bug
-[repo:features]:https://github.com/gourmet/liquid/issues?label=feature
-[repo:docs]:https://github.com/gourmet/liquid/tree/gh-pages
-[repo:fork]:https://github.com/gourmet/liquid/fork
-[repo:pr]:https://github.com/gourmet/liquid/compare
+[repo:issue]:https://github.com/gourmet/faker/issues/new
+[repo:bugs]:https://github.com/gourmet/faker/issues?label=bug
+[repo:features]:https://github.com/gourmet/faker/issues?label=feature
+[repo:docs]:https://github.com/gourmet/faker/tree/gh-pages
+[repo:fork]:https://github.com/gourmet/faker/fork
+[repo:pr]:https://github.com/gourmet/faker/compare
 [travis]:https://travis-ci.org

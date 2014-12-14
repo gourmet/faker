@@ -54,4 +54,4 @@ Configure::write('App', [
 ]);
 
 
-Plugin::load('Gourmet/Liquid', ['path' => ROOT]);
+Plugin::load('Gourmet/Faker', ['path' => ROOT]);
