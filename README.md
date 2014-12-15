@@ -25,9 +25,12 @@ You then need to load the plugin. In `boostrap.php`, something like:
 ```php
 \Cake\Core\Plugin::load('Gourmet/Faker');
 ```
-## Create a fixture
 
-```
+## Examples
+
+### Fixture
+
+```php
 <?php
 
 namespace App\Test\Fixture;
@@ -88,9 +91,44 @@ class PostsFixture extends TestFixture {
 }
 ```
 
-In the meantime, read more about the library this plugin wraps over [here][Faker].
+### Migration
 
-That's it!
+```php
+<?php
+
+use Phinx\Migration\AbstractMigration;
+
+class SeedDataMigration extends AbstractMigration {
+    public function up() {
+        $faker = Faker::create();
+        $populator = new Populator($faker);
+        $populator->addGuesser('\Faker\Guesser\Name');
+
+        $created = $modified = function () use ($faker) {
+            static $beacon;
+            $ret = $beacon;
+            if (empty($ret)) {
+                return $beacon = $faker->dateTimeThisDecade();
+            }
+            $beacon = null;
+            return $ret;
+        }
+        $timestamp = compact('created', 'modified');
+
+        $roles = ['admin', 'editor', 'member'];
+
+        $populator->addEntity('Users', 100, [
+            'email' => function () use ($faker) { return $faker->safeEmail(); },
+            'first_name' => function () use ($faker) { return $faker->firstName(); },
+            'last_name' => function () use ($faker) { return $faker->lastName(); },
+            'timezone' => function () use ($faker) { return $faker->timezone(); },
+            'role' => function () use ($roles) { return $roles[array_rand($roles)]; }
+        ] + $timestamp);
+
+        $populator->execute(['validate' => false]);
+    }
+}
+```
 
 ## License
 
