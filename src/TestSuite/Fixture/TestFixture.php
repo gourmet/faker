@@ -56,8 +56,8 @@ class TestFixture extends CakeTestFixture {
 /**
  * {@inheritdoc}
  */
-	public function create(Connection $db) {
-		if (!parent::create($db)) {
+	public function insert(Connection $db) {
+		if (!parent::insert($db)) {
 			return false;
 		}
 
