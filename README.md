@@ -1,5 +1,8 @@
 # Faker
 
+[![Total Downloads](https://poser.pugx.org/gourmet/faker/downloads.svg)](https://packagist.org/packages/gourmet/faker)
+[![License](https://poser.pugx.org/gourmet/faker/license.svg)](https://packagist.org/packages/gourmet/faker)
+
 Built to enable [Faker] support in [CakePHP][cakephp].
 
 ## Requirements
