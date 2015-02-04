@@ -21,7 +21,6 @@
 	}
 	, "require": {
 		"cakephp/cakephp": "3.0.*-dev"
-		, "cakephp/plugin-installer": "*"
 		, "fzaninotto/faker": "dev-master"
 	}
 	, "require-dev": {
