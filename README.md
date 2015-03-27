@@ -10,7 +10,7 @@ Built to enable [Faker] support in [CakePHP 3].
 Using [Composer]:
 
 ```
-composer require gourmet/faker:dev-master
+composer require gourmet/faker:~1.0
 ```
 
 You then need to load the plugin. In `boostrap.php`, something like:
