@@ -3,25 +3,15 @@
 [![Total Downloads](https://poser.pugx.org/gourmet/faker/downloads.svg)](https://packagist.org/packages/gourmet/faker)
 [![License](https://poser.pugx.org/gourmet/faker/license.svg)](https://packagist.org/packages/gourmet/faker)
 
-Built to enable [Faker] support in [CakePHP][cakephp].
-
-## Requirements
-
-* CakePHP 3.x
-* Faker
+Built to enable [Faker] support in [CakePHP 3].
 
 ## Install
 
-Using [Composer][composer]:
+Using [Composer]:
 
 ```
-composer require gourmet/faker
+composer require gourmet/faker:dev-master
 ```
-
-Because this plugin has the type `cakephp-plugin` set in its own `composer.json`,
-[Composer][composer] will install it inside your /plugins directory, rather than
-in your `vendor-dir`. It is recommended that you add /plugins/gourmet/faker to your
-`.gitignore` file and here's [why][composer:ignore].
 
 You then need to load the plugin. In `boostrap.php`, something like:
 
@@ -135,10 +125,9 @@ class SeedDataMigration extends AbstractMigration {
 
 ## License
 
-Copyright (c) 2014, Jad Bitar and licensed under [The MIT License][mit].
+Copyright (c)2015, Jad Bitar and licensed under [The MIT License][mit].
 
-[cakephp]:http://cakephp.org
-[composer]:http://getcomposer.org
-[composer:ignore]:http://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md
+[CakePHP 3]:http://cakephp.org
+[Composer]:http://getcomposer.org
 [mit]:http://www.opensource.org/licenses/mit-license.php
 [Faker]:https://github.com/fzaninotto/Faker
