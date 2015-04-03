@@ -20,10 +20,10 @@
 		, "source": "http://github.com/gourmet/faker"
 	}
 	, "require": {
-		"cakephp/cakephp": "3.0.*-dev"
-		, "fzaninotto/faker": "dev-master"
+		"fzaninotto/faker": "dev-master"
 	}
 	, "require-dev": {
+		"cakephp/cakephp": "3.0.*",
 		"phpunit/phpunit": "4.1.*"
 	}
 	, "autoload": {
