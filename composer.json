@@ -36,7 +36,4 @@
 			"Gourmet\\Faker\\Test\\": "tests"
 		}
 	}
-	, "extra": {
-		"installer-name": "Gourmet/Faker"
-	}
 }
