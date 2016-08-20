@@ -35,5 +35,9 @@
 		"psr-4": {
 			"Gourmet\\Faker\\Test\\": "tests"
 		}
+	}, "extra": {
+		"branch-alias": {
+			"dev-master": "1.1.x-dev"
+		}
 	}
 }
